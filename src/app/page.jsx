@@ -19,7 +19,7 @@ export default function HomePage() {
         ].map((section, index) => (
           <section key={index} className={`w-full bg-gradient-to-r ${section.gradient} py-16 px-6 md:px-24 rounded-2xl shadow-lg flex flex-col items-center text-center` }>
             <h2 className={`text-4xl font-semibold ${section.color}`}>{section.title}</h2>
-            <div className='flex gap-6'>
+            <div className='md:flex md:gap-6'>
               {section.img && <Image src={section.img1} alt={section.title} width={500} height={400} className="rounded-lg mt-4" />}
               {section.img && <Image src={section.img} alt={section.title} width={500} height={400} className="rounded-lg mt-4" />}
             </div>
